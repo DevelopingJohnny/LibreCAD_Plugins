@@ -43,9 +43,6 @@ void LC_DelObject::execComm(Document_Interface *doc,
     Plug_Entity *sample = doc->getEnt(tr("Select Sample Object to be removed"));
     if (!sample) {return;}
 
-    Plug_Entity *check = doc->getEnt(tr("Select Check Object to be removed"));
-    if (!check) {return;}
-
     QList<Plug_Entity *> entities;
 
     bool result = doc->getAllEntities(&entities);
